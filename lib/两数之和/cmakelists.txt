@@ -1,0 +1,12 @@
+
+
+add_library(TwoNum  TwoNum.cpp)
+target_include_directories(
+    TwoNum 
+    PUBLIC 
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${PROJECT_SOURCE_DIR}/Common
+    ) # 添加吗目标包含目录
+
+# target_link_directories(TwoNum PUBLIC ${PROJECT_SOURCE_DIR}/Common)
+target_compile_features(TwoNum PUBLIC cxx_std_20)

@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/document/Cpp/leetcode/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -ID:/document/Cpp/leetcode/lib/两数之和 -ID:/document/Cpp/leetcode/Common -g -std=c++20 -o CMakeFiles\\Main.dir\\src\\main.cpp.obj -c D:\\document\\Cpp\\leetcode\\src\\main.cpp",
+  "file": "D:\\document\\Cpp\\leetcode\\src\\main.cpp",
+  "output": "CMakeFiles\\Main.dir\\src\\main.cpp.obj"
+},
+{
+  "directory": "D:/document/Cpp/leetcode/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -ID:/document/Cpp/leetcode/lib/两数之和 -ID:/document/Cpp/leetcode/Common -g -std=c++20 -o lib\\两数之和\\CMakeFiles\\TwoNum.dir\\TwoNum.cpp.obj -c D:\\document\\Cpp\\leetcode\\lib\\两数之和\\TwoNum.cpp",
+  "file": "D:\\document\\Cpp\\leetcode\\lib\\两数之和\\TwoNum.cpp",
+  "output": "lib\\两数之和\\CMakeFiles\\TwoNum.dir\\TwoNum.cpp.obj"
+}
+]

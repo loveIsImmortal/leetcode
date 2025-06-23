@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/document/Cpp/leetcode/build/cmake_install.cmake",
+		"D:/document/Cpp/leetcode/build/lib/\u4e24\u6570\u4e4b\u548c/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
