@@ -13,47 +13,20 @@
 ListNode *TwoAdd::addTwoNumbers(ListNode *l1, ListNode *l2)
 {
     ListNode *result = new ListNode(0);
-    ListNode *result_index = result;
-    bool flag = false;
+    ListNode *result_copy = result;
 
-    while (l1 && l2)
-    {
-        flag = l1->val + l2->val + result_index->val >= 10;
-        result_index->val = (l1->val + l2->val + result_index->val) % 10;
-        l1 = l1->next;
-        l2 = l2->next;
-        if (flag || l1 || l2)
-        {
-            result_index->next = new ListNode(flag);
-            result_index = result_index->next;
-            flag = false;
-        }
-    }
-
-    while (l1)
-    {
-        flag = l1->val + result_index->val >= 10;
-        result_index->val = (l1->val + result_index->val) % 10;
-        l1 = l1->next;
-        if (flag || l1 || l2)
-        {
-            result_index->next = new ListNode(flag);
-            result_index = result_index->next;
-            flag = false;
-        }
-    }
-
-    while (l2)
-    {
-        flag = l2->val + result_index->val >= 10;
-        result_index->val = (l2->val + result_index->val) % 10;
-        l2 = l2->next;
-        if (flag || l2)
-        {
-            result_index->next = new ListNode(flag);
-            result_index = result_index->next;
-            flag = false;
-        }
+    int x,y,z; // x : l1-val, y : l2-val , z : 补位标志 
+    x=y=z=0; // 初始化
+    while (result_copy != nullptr){
+        x = l1 ? l1->val : 0; // 提取l1-val
+        y = l2 ? l2->val : 0; // 提取l2-val
+        z = (x + y + result_copy->val) / 10; // 验证是否补位 
+        result_copy->val = (result_copy->val + x + y) % 10; // 计算当前位
+        l1 = l1 ? l1->next : nullptr; // l1 进位
+        l2 = l2 ? l2->next : nullptr; // l2 进位
+        if (z || l1 || l2) // 判断结果是否需要进一位计算
+            result_copy->next = new ListNode(z);
+        result_copy = result_copy->next;
     }
     return result;
 }
@@ -97,3 +70,49 @@ void TwoAdd::free(ListNode *items){
         delete node;
     }
 }
+
+
+// ListNode *result = new ListNode(0);
+//     ListNode *result_index = result;
+//     bool flag = false;
+
+//     while (l1 && l2)
+//     {
+//         flag = l1->val + l2->val + result_index->val >= 10;
+//         result_index->val = (l1->val + l2->val + result_index->val) % 10;
+//         l1 = l1->next;
+//         l2 = l2->next;
+//         if (flag || l1 || l2)
+//         {
+//             result_index->next = new ListNode(flag);
+//             result_index = result_index->next;
+//             flag = false;
+//         }
+//     }
+
+//     while (l1)
+//     {
+//         flag = l1->val + result_index->val >= 10;
+//         result_index->val = (l1->val + result_index->val) % 10;
+//         l1 = l1->next;
+//         if (flag || l1 || l2)
+//         {
+//             result_index->next = new ListNode(flag);
+//             result_index = result_index->next;
+//             flag = false;
+//         }
+//     }
+
+//     while (l2)
+//     {
+//         flag = l2->val + result_index->val >= 10;
+//         result_index->val = (l2->val + result_index->val) % 10;
+//         l2 = l2->next;
+//         if (flag || l2)
+//         {
+//             result_index->next = new ListNode(flag);
+//             result_index = result_index->next;
+//             flag = false;
+//         }
+//     }
+//     return result;
