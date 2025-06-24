@@ -5,8 +5,8 @@
 
 
 int main(int argc, char **argv){
-    std::vector<int> nums1 = {2,4,9};
-    std::vector<int> nums2 = {5,6,4,9};
+    std::vector<int> nums1 = {0};
+    std::vector<int> nums2 = {2, 7, 8};
     ListNode *n1 = TwoAdd::initListNode(nums1);
     ListNode *n2 = TwoAdd::initListNode(nums2);
 

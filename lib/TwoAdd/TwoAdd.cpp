@@ -51,7 +51,7 @@ ListNode *TwoAdd::addTwoNumbers(ListNode *l1, ListNode *l2)
         if (flag || l2)
         {
             result_index->next = new ListNode(flag);
-            result_index = result_index;
+            result_index = result_index->next;
             flag = false;
         }
     }
