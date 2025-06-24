@@ -5,5 +5,5 @@
 
 class TwoSum{
     public:
-        std::vector<int> twoSum(std::vector<int>& , int );
+        static std::vector<int> twoSum(std::vector<int>& , int );
 };

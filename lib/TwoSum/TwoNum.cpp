@@ -5,7 +5,7 @@
  * 
  */
 
-std::vector<int> TwoSum::twoSum(std::vector<int> &nums, int target)
+std::vector<int>  TwoSum::twoSum(std::vector<int> &nums, int target)
 {
     std::unordered_map<int, int> hash; // key: 数值, value: 下标
     for (int i = 0; i < nums.size(); ++i) { 

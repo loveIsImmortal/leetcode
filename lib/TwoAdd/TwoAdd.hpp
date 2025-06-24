@@ -15,8 +15,12 @@ struct ListNode {
       ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-class Solution{
+class TwoAdd{
 public:
     public:
-    ListNode* addTwoNumbers(ListNode* , ListNode* );
+    static ListNode* addTwoNumbers(ListNode* , ListNode* );
+    static ListNode* initListNode(std::vector<int>);
+    static void printTest(ListNode *items);
+    static void free(ListNode *items);
 };
+
