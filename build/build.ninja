@@ -53,7 +53,7 @@ build CMakeFiles/Main.dir/src/main.cpp.obj: CXX_COMPILER__Main_unscanned_Debug D
   CONFIG = Debug
   DEP_FILE = CMakeFiles\Main.dir\src\main.cpp.obj.d
   FLAGS = -g -std=c++20
-  INCLUDES = -ID:/document/Cpp/leetcode/lib/两数之和 -ID:/document/Cpp/leetcode/Common
+  INCLUDES = -ID:/document/Cpp/leetcode/lib/两数之和
   OBJECT_DIR = CMakeFiles\Main.dir
   OBJECT_FILE_DIR = CMakeFiles\Main.dir\src
 

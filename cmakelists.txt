@@ -18,5 +18,9 @@ project(leetcode VERSION 1.0
 add_subdirectory(lib/两数之和)
 
 add_executable(Main src/main.cpp)
+target_include_directories(Main 
+    PUBLIC ${PROJECT_SOURCE_DIR/Common}
+)
 
 target_link_libraries(Main PUBLIC TwoNum)
+

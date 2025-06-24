@@ -13,18 +13,36 @@
 ListNode* Solution::addTwoNumbers(ListNode* l1, ListNode* l2){
     ListNode* result = new ListNode(0);
     ListNode* result_index = result;
-    char cy = 0;
     bool flag = false;
+    
     while (l1 && l2){
-        result_index->val =  (l1->val + l2->val + flag ? 1 : 0) % 10 ;
-        if (l1->next || l2->next || l1->val + l2->val >= 10){
-            result_index->next = new ListNode(0);
-            l1 = l1->next;
-            l2 = l2->next;
+        result_index->val = (l1->val + l2->val + result_index) % 10;
+        flag = l1->val + l2->val + flag >= 10;
+        l1 = l1->next; l2 = l2->next;
+        if (flag || l1 || l2){
+            result_index->next = new ListNode(flag);
             result_index = result_index->next;
         }
     }
+
     while (l1){
-        result_index->val = (l1->val + flag)  % 10;
+        result_index->val = (l1->val + result_index) % 10;
+        flag = l1->val + flag >= 10;
+        l1 = l1->next;
+        if (flag || l1 || l2){
+            result_index->next = new ListNode(flag);
+            result_index = result_index->next;
+        }
     }
+
+    while (l2){
+        result_index->val = (l2->val + result_index) % 10;
+        flag = l1->val + flag >= 10;
+        l2 = l2->next;
+        if (flag || l2){
+            result_index->next = new ListNode(flag);
+            result_index = result_index;
+        }
+    }
+    return result;
 }
