@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/TwoAdd/libTwoAdd.a"
+			"path" : "lib/demo2/libdemo2.a"
 		}
 	],
 	"backtrace" : 1,
@@ -17,7 +17,7 @@
 		],
 		"files" : 
 		[
-			"lib/TwoAdd/CMakeLists.txt"
+			"lib/demo2/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -57,7 +57,7 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "D:/document/Cpp/leetcode/lib/TwoAdd"
+					"path" : "D:/document/Cpp/leetcode/lib/demo2"
 				},
 				{
 					"backtrace" : 2,
@@ -79,13 +79,13 @@
 			]
 		}
 	],
-	"id" : "TwoAdd::@6b7db08956bf78ddfc97",
-	"name" : "TwoAdd",
-	"nameOnDisk" : "libTwoAdd.a",
+	"id" : "demo2::@5e33049e85fdf9176911",
+	"name" : "demo2",
+	"nameOnDisk" : "libdemo2.a",
 	"paths" : 
 	{
-		"build" : "lib/TwoAdd",
-		"source" : "lib/TwoAdd"
+		"build" : "lib/demo2",
+		"source" : "lib/demo2"
 	},
 	"sourceGroups" : 
 	[
@@ -102,7 +102,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/TwoAdd/TwoAdd.cpp",
+			"path" : "lib/demo2/Solution.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

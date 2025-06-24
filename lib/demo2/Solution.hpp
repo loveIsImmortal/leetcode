@@ -15,7 +15,7 @@ struct ListNode {
       ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-class TwoAdd{
+class Solution{
 public:
     public:
     static ListNode* addTwoNumbers(ListNode* , ListNode* );

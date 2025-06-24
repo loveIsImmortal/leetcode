@@ -63,7 +63,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/document/Cpp/leetcode/lib/TwoAdd"
+					"path" : "D:/document/Cpp/leetcode/lib/demo2"
 				}
 			],
 			"language" : "CXX",
@@ -85,7 +85,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "TwoAdd::@6b7db08956bf78ddfc97"
+			"id" : "demo2::@5e33049e85fdf9176911"
 		}
 	],
 	"id" : "Main::@6890427a1f51a3e7e1df",
@@ -99,7 +99,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\TwoAdd\\libTwoAdd.a",
+				"fragment" : "lib\\demo2\\libdemo2.a",
 				"role" : "libraries"
 			},
 			{

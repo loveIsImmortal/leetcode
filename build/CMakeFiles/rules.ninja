@@ -71,7 +71,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for generating CXX dependencies.
 
-rule CXX_SCAN__TwoAdd_Debug
+rule CXX_SCAN__demo2_Debug
   depfile = $DEP_FILE
   command = C:\PROGRA~1\mingw64\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
   description = Scanning $in for CXX dependencies
@@ -80,8 +80,8 @@ rule CXX_SCAN__TwoAdd_Debug
 #############################################
 # Rule to generate ninja dyndep files for CXX.
 
-rule CXX_DYNDEP__TwoAdd_Debug
-  command = "C:\Program Files\CMake\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=lib\TwoAdd\CMakeFiles\TwoAdd.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+rule CXX_DYNDEP__demo2_Debug
+  command = "C:\Program Files\CMake\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=lib\demo2\CMakeFiles\demo2.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
   rspfile_content = $in
@@ -91,7 +91,7 @@ rule CXX_DYNDEP__TwoAdd_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TwoAdd_scanned_Debug
+rule CXX_COMPILER__demo2_scanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\mingw64\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
@@ -101,7 +101,7 @@ rule CXX_COMPILER__TwoAdd_scanned_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TwoAdd_unscanned_Debug
+rule CXX_COMPILER__demo2_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\mingw64\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -111,7 +111,7 @@ rule CXX_COMPILER__TwoAdd_unscanned_Debug
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__TwoAdd_Debug
+rule CXX_STATIC_LIBRARY_LINKER__demo2_Debug
   command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\PROGRA~1\mingw64\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\PROGRA~1\mingw64\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT

@@ -23,15 +23,15 @@
 					]
 				},
 				{
-					"build" : "lib/TwoAdd",
-					"jsonFile" : "directory-lib.TwoAdd-Debug-b8e0a0a8a814c24bb5d6.json",
+					"build" : "lib/demo2",
+					"jsonFile" : "directory-lib.demo2-Debug-16ce72e3eedb47b1aa70.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.25"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "lib/TwoAdd",
+					"source" : "lib/demo2",
 					"targetIndexes" : 
 					[
 						1
@@ -60,15 +60,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Main-Debug-aa20b66c834844588936.json",
+					"jsonFile" : "target-Main-Debug-f47127d5280fb30177a6.json",
 					"name" : "Main",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "TwoAdd::@6b7db08956bf78ddfc97",
-					"jsonFile" : "target-TwoAdd-Debug-aa25c9aa06d703d7a5e5.json",
-					"name" : "TwoAdd",
+					"id" : "demo2::@5e33049e85fdf9176911",
+					"jsonFile" : "target-demo2-Debug-46b342d2f139d0220523.json",
+					"name" : "demo2",
 					"projectIndex" : 0
 				}
 			]

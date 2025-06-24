@@ -1,4 +1,4 @@
-#include "TwoAdd.hpp"
+#include "Solution.hpp"
 #include <stack>
 /**
  * struct ListNode {
@@ -10,7 +10,7 @@
 };
  */
 
-ListNode *TwoAdd::addTwoNumbers(ListNode *l1, ListNode *l2)
+ListNode *Solution::addTwoNumbers(ListNode *l1, ListNode *l2)
 {
     ListNode *result = new ListNode(0);
     ListNode *result_copy = result;
@@ -31,7 +31,7 @@ ListNode *TwoAdd::addTwoNumbers(ListNode *l1, ListNode *l2)
     return result;
 }
 
-ListNode *TwoAdd::initListNode(std::vector<int> nums)
+ListNode *Solution::initListNode(std::vector<int> nums)
 {
     ListNode *result = new ListNode(0);
     ListNode *result_index = result;
@@ -49,7 +49,7 @@ ListNode *TwoAdd::initListNode(std::vector<int> nums)
     return result;
 }
 
-void TwoAdd::printTest(ListNode *items) {
+void Solution::printTest(ListNode *items) {
     while (items){
         std::cout << items->val << " ";
         items = items->next;
@@ -57,7 +57,7 @@ void TwoAdd::printTest(ListNode *items) {
     std:: cout << std:: endl;
 }
 
-void TwoAdd::free(ListNode *items){
+void Solution::free(ListNode *items){
     std::stack<ListNode*> cache;
     while (items){
         cache.push(items);

@@ -1,11 +1,11 @@
-#include "TwoNum.hpp"
+#include "Solution.hpp"
 /**
  * 数据会重复, pass : Tree 方法
  * 数据返回下标, pass: 排序 + 双指针
  * 
  */
 
-std::vector<int>  TwoSum::twoSum(std::vector<int> &nums, int target)
+std::vector<int>  Solution::twoSum(std::vector<int> &nums, int target)
 {
     std::unordered_map<int, int> hash; // key: 数值, value: 下标
     for (int i = 0; i < nums.size(); ++i) { 
