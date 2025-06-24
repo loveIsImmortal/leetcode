@@ -137,7 +137,7 @@
 			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake"
 		},
 		{
-			"path" : "lib/\u4e24\u6570\u4e4b\u548c/CMakeLists.txt"
+			"path" : "lib/TwoAdd/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

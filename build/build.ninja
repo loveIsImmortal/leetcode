@@ -47,13 +47,13 @@ cmake_ninja_workdir = D$:/document/Cpp/leetcode/build/
 #############################################
 # Order-only phony target for Main
 
-build cmake_object_order_depends_target_Main: phony || cmake_object_order_depends_target_TwoNum
+build cmake_object_order_depends_target_Main: phony || cmake_object_order_depends_target_TwoAdd
 
 build CMakeFiles/Main.dir/src/main.cpp.obj: CXX_COMPILER__Main_unscanned_Debug D$:/document/Cpp/leetcode/src/main.cpp || cmake_object_order_depends_target_Main
   CONFIG = Debug
   DEP_FILE = CMakeFiles\Main.dir\src\main.cpp.obj.d
   FLAGS = -g -std=c++20
-  INCLUDES = -ID:/document/Cpp/leetcode/lib/两数之和
+  INCLUDES = -ID:/document/Cpp/leetcode/Common -ID:/document/Cpp/leetcode/lib/TwoAdd
   OBJECT_DIR = CMakeFiles\Main.dir
   OBJECT_FILE_DIR = CMakeFiles\Main.dir\src
 
@@ -65,10 +65,10 @@ build CMakeFiles/Main.dir/src/main.cpp.obj: CXX_COMPILER__Main_unscanned_Debug D
 #############################################
 # Link the executable Main.exe
 
-build Main.exe: CXX_EXECUTABLE_LINKER__Main_Debug CMakeFiles/Main.dir/src/main.cpp.obj | lib/两数之和/libTwoNum.a || lib/两数之和/libTwoNum.a
+build Main.exe: CXX_EXECUTABLE_LINKER__Main_Debug CMakeFiles/Main.dir/src/main.cpp.obj | lib/TwoAdd/libTwoAdd.a || lib/TwoAdd/libTwoAdd.a
   CONFIG = Debug
   FLAGS = -g
-  LINK_LIBRARIES = lib/两数之和/libTwoNum.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = lib/TwoAdd/libTwoAdd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -106,71 +106,71 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target TwoNum
+# Object build statements for STATIC_LIBRARY target TwoAdd
 
 
 #############################################
-# Order-only phony target for TwoNum
+# Order-only phony target for TwoAdd
 
-build cmake_object_order_depends_target_TwoNum: phony || .
+build cmake_object_order_depends_target_TwoAdd: phony || .
 
-build lib/两数之和/CMakeFiles/TwoNum.dir/TwoNum.cpp.obj: CXX_COMPILER__TwoNum_unscanned_Debug D$:/document/Cpp/leetcode/lib/两数之和/TwoNum.cpp || cmake_object_order_depends_target_TwoNum
+build lib/TwoAdd/CMakeFiles/TwoAdd.dir/TwoAdd.cpp.obj: CXX_COMPILER__TwoAdd_unscanned_Debug D$:/document/Cpp/leetcode/lib/TwoAdd/TwoAdd.cpp || cmake_object_order_depends_target_TwoAdd
   CONFIG = Debug
-  DEP_FILE = lib\两数之和\CMakeFiles\TwoNum.dir\TwoNum.cpp.obj.d
+  DEP_FILE = lib\TwoAdd\CMakeFiles\TwoAdd.dir\TwoAdd.cpp.obj.d
   FLAGS = -g -std=c++20
-  INCLUDES = -ID:/document/Cpp/leetcode/lib/两数之和 -ID:/document/Cpp/leetcode/Common
-  OBJECT_DIR = lib\两数之和\CMakeFiles\TwoNum.dir
-  OBJECT_FILE_DIR = lib\两数之和\CMakeFiles\TwoNum.dir
+  INCLUDES = -ID:/document/Cpp/leetcode/lib/TwoAdd -ID:/document/Cpp/leetcode/Common
+  OBJECT_DIR = lib\TwoAdd\CMakeFiles\TwoAdd.dir
+  OBJECT_FILE_DIR = lib\TwoAdd\CMakeFiles\TwoAdd.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target TwoNum
+# Link build statements for STATIC_LIBRARY target TwoAdd
 
 
 #############################################
-# Link the static library lib\两数之和\libTwoNum.a
+# Link the static library lib\TwoAdd\libTwoAdd.a
 
-build lib/两数之和/libTwoNum.a: CXX_STATIC_LIBRARY_LINKER__TwoNum_Debug lib/两数之和/CMakeFiles/TwoNum.dir/TwoNum.cpp.obj
+build lib/TwoAdd/libTwoAdd.a: CXX_STATIC_LIBRARY_LINKER__TwoAdd_Debug lib/TwoAdd/CMakeFiles/TwoAdd.dir/TwoAdd.cpp.obj
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = lib\两数之和\CMakeFiles\TwoNum.dir
+  OBJECT_DIR = lib\TwoAdd\CMakeFiles\TwoAdd.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = lib\两数之和\libTwoNum.a
-  TARGET_PDB = TwoNum.a.dbg
+  TARGET_FILE = lib\TwoAdd\libTwoAdd.a
+  TARGET_PDB = TwoAdd.a.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
-build lib/两数之和/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\document\Cpp\leetcode\build\lib\两数之和 && "C:\Program Files\CMake\bin\cmake-gui.exe" -SD:\document\Cpp\leetcode -BD:\document\Cpp\leetcode\build"
+build lib/TwoAdd/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\document\Cpp\leetcode\build\lib\TwoAdd && "C:\Program Files\CMake\bin\cmake-gui.exe" -SD:\document\Cpp\leetcode -BD:\document\Cpp\leetcode\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build lib/两数之和/edit_cache: phony lib/两数之和/CMakeFiles/edit_cache.util
+build lib/TwoAdd/edit_cache: phony lib/TwoAdd/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build lib/两数之和/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\document\Cpp\leetcode\build\lib\两数之和 && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SD:\document\Cpp\leetcode -BD:\document\Cpp\leetcode\build"
+build lib/TwoAdd/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\document\Cpp\leetcode\build\lib\TwoAdd && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SD:\document\Cpp\leetcode -BD:\document\Cpp\leetcode\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build lib/两数之和/rebuild_cache: phony lib/两数之和/CMakeFiles/rebuild_cache.util
+build lib/TwoAdd/rebuild_cache: phony lib/TwoAdd/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
 
 build Main: phony Main.exe
 
-build TwoNum: phony lib/两数之和/libTwoNum.a
+build TwoAdd: phony lib/TwoAdd/libTwoAdd.a
 
-build libTwoNum.a: phony lib/两数之和/libTwoNum.a
+build libTwoAdd.a: phony lib/TwoAdd/libTwoAdd.a
 
 # =============================================================================
 # Folder targets.
@@ -180,14 +180,14 @@ build libTwoNum.a: phony lib/两数之和/libTwoNum.a
 #############################################
 # Folder: D:/document/Cpp/leetcode/build
 
-build all: phony Main.exe lib/两数之和/all
+build all: phony Main.exe lib/TwoAdd/all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/document/Cpp/leetcode/build/lib/两数之和
+# Folder: D:/document/Cpp/leetcode/build/lib/TwoAdd
 
-build lib/两数之和/all: phony lib/两数之和/libTwoNum.a
+build lib/TwoAdd/all: phony lib/TwoAdd/libTwoAdd.a
 
 # =============================================================================
 # Built-in targets
@@ -196,14 +196,14 @@ build lib/两数之和/all: phony lib/两数之和/libTwoNum.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja D$:/document/Cpp/leetcode/build/cmake_install.cmake D$:/document/Cpp/leetcode/build/lib/两数之和/cmake_install.cmake: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.1/CMakeCXXCompiler.cmake CMakeFiles/4.0.1/CMakeRCCompiler.cmake CMakeFiles/4.0.1/CMakeSystem.cmake D$:/document/Cpp/leetcode/CMakeLists.txt D$:/document/Cpp/leetcode/lib/两数之和/CMakeLists.txt
+build build.ninja D$:/document/Cpp/leetcode/build/cmake_install.cmake D$:/document/Cpp/leetcode/build/lib/TwoAdd/cmake_install.cmake: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.1/CMakeCXXCompiler.cmake CMakeFiles/4.0.1/CMakeRCCompiler.cmake CMakeFiles/4.0.1/CMakeSystem.cmake D$:/document/Cpp/leetcode/CMakeLists.txt D$:/document/Cpp/leetcode/lib/TwoAdd/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.1/CMakeCXXCompiler.cmake CMakeFiles/4.0.1/CMakeRCCompiler.cmake CMakeFiles/4.0.1/CMakeSystem.cmake D$:/document/Cpp/leetcode/CMakeLists.txt D$:/document/Cpp/leetcode/lib/两数之和/CMakeLists.txt: phony
+build C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.1/CMakeCXXCompiler.cmake CMakeFiles/4.0.1/CMakeRCCompiler.cmake CMakeFiles/4.0.1/CMakeSystem.cmake D$:/document/Cpp/leetcode/CMakeLists.txt D$:/document/Cpp/leetcode/lib/TwoAdd/CMakeLists.txt: phony
 
 
 #############################################

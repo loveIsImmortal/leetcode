@@ -14,7 +14,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -36,6 +37,12 @@
 				"file" : 0,
 				"line" : 25,
 				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
 			}
 		]
 	},
@@ -51,8 +58,12 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 3,
+					"path" : "D:/document/Cpp/leetcode/Common"
+				},
+				{
 					"backtrace" : 2,
-					"path" : "D:/document/Cpp/leetcode/lib/\u4e24\u6570\u4e4b\u548c"
+					"path" : "D:/document/Cpp/leetcode/lib/TwoAdd"
 				}
 			],
 			"language" : "CXX",
@@ -74,7 +85,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "TwoNum::@33232f5f49aef0705cdd"
+			"id" : "TwoAdd::@6b7db08956bf78ddfc97"
 		}
 	],
 	"id" : "Main::@6890427a1f51a3e7e1df",
@@ -88,7 +99,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\\u4e24\u6570\u4e4b\u548c\\libTwoNum.a",
+				"fragment" : "lib\\TwoAdd\\libTwoAdd.a",
 				"role" : "libraries"
 			},
 			{
