@@ -1,0 +1,10 @@
+
+
+add_library(demo3 Solution.cpp)
+target_include_directories(
+    demo3
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
+    PUBLIC ${PROJECT_SOURCE_DIR}/Common
+)
+
+target_compile_features(demo3 PUBLIC cxx_std_20)

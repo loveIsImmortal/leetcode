@@ -501,7 +501,7 @@
 			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompiler.cmake.in"
 		},
 		{
-			"path" : "lib/demo2/CMakeLists.txt"
+			"path" : "lib/demo3/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "lib/demo2",
-		"source" : "lib/demo2"
+		"build" : "lib/demo3",
+		"source" : "lib/demo3"
 	}
 }

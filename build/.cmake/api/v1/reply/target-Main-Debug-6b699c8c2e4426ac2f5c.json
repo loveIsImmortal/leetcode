@@ -63,7 +63,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/document/Cpp/leetcode/lib/demo2"
+					"path" : "D:/document/Cpp/leetcode/lib/demo3"
 				}
 			],
 			"language" : "CXX",
@@ -85,7 +85,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "demo2::@5e33049e85fdf9176911"
+			"id" : "demo3::@9ee301a53832ff45da63"
 		}
 	],
 	"id" : "Main::@6890427a1f51a3e7e1df",
@@ -99,7 +99,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\demo2\\libdemo2.a",
+				"fragment" : "lib\\demo3\\libdemo3.a",
 				"role" : "libraries"
 			},
 			{

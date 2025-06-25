@@ -23,15 +23,15 @@
 					]
 				},
 				{
-					"build" : "lib/demo2",
-					"jsonFile" : "directory-lib.demo2-Debug-16ce72e3eedb47b1aa70.json",
+					"build" : "lib/demo3",
+					"jsonFile" : "directory-lib.demo3-Debug-18abf13efb92e130fc59.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.25"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "lib/demo2",
+					"source" : "lib/demo3",
 					"targetIndexes" : 
 					[
 						1
@@ -60,15 +60,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Main-Debug-f47127d5280fb30177a6.json",
+					"jsonFile" : "target-Main-Debug-6b699c8c2e4426ac2f5c.json",
 					"name" : "Main",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "demo2::@5e33049e85fdf9176911",
-					"jsonFile" : "target-demo2-Debug-46b342d2f139d0220523.json",
-					"name" : "demo2",
+					"id" : "demo3::@9ee301a53832ff45da63",
+					"jsonFile" : "target-demo3-Debug-d267ef6fd820f77d8107.json",
+					"name" : "demo3",
 					"projectIndex" : 0
 				}
 			]
