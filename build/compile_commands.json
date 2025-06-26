@@ -1,14 +1,14 @@
 [
 {
-  "directory": "D:/document/Cpp/leetcode/build",
-  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -ID:/document/Cpp/leetcode/Common -ID:/document/Cpp/leetcode/lib/demo3 -g -std=c++20 -o CMakeFiles\\Main.dir\\src\\main.cpp.obj -c D:\\document\\Cpp\\leetcode\\src\\main.cpp",
-  "file": "D:\\document\\Cpp\\leetcode\\src\\main.cpp",
+  "directory": "E:/Cpp/leetcode/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -IE:/Cpp/leetcode/Common -IE:/Cpp/leetcode/lib/demo4 -g -std=c++20 -o CMakeFiles\\Main.dir\\src\\main.cpp.obj -c E:\\Cpp\\leetcode\\src\\main.cpp",
+  "file": "E:\\Cpp\\leetcode\\src\\main.cpp",
   "output": "CMakeFiles\\Main.dir\\src\\main.cpp.obj"
 },
 {
-  "directory": "D:/document/Cpp/leetcode/build",
-  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -ID:/document/Cpp/leetcode/lib/demo3 -ID:/document/Cpp/leetcode/Common -g -std=c++20 -o lib\\demo3\\CMakeFiles\\demo3.dir\\Solution.cpp.obj -c D:\\document\\Cpp\\leetcode\\lib\\demo3\\Solution.cpp",
-  "file": "D:\\document\\Cpp\\leetcode\\lib\\demo3\\Solution.cpp",
-  "output": "lib\\demo3\\CMakeFiles\\demo3.dir\\Solution.cpp.obj"
+  "directory": "E:/Cpp/leetcode/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE -IE:/Cpp/leetcode/lib/demo4 -IE:/Cpp/leetcode/Common -g -std=c++20 -o lib\\demo4\\CMakeFiles\\demo4.dir\\Solution.cpp.obj -c E:\\Cpp\\leetcode\\lib\\demo4\\Solution.cpp",
+  "file": "E:\\Cpp\\leetcode\\lib\\demo4\\Solution.cpp",
+  "output": "lib\\demo4\\CMakeFiles\\demo4.dir\\Solution.cpp.obj"
 }
 ]

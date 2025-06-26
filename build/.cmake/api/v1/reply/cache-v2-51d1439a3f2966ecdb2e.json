@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/document/Cpp/leetcode/build"
+			"value" : "e:/Cpp/leetcode/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -139,10 +139,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/Program Files/mingw64/bin/g++.exe"
 		},
 		{
@@ -455,7 +455,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/document/Cpp/leetcode/build/CMakeFiles/pkgRedirects"
+			"value" : "E:/Cpp/leetcode/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -527,7 +527,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/document/Cpp/leetcode"
+			"value" : "E:/Cpp/leetcode"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1235,7 +1235,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/document/Cpp/leetcode/build"
+			"value" : "E:/Cpp/leetcode/build"
 		},
 		{
 			"name" : "leetcode_IS_TOP_LEVEL",
@@ -1259,7 +1259,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/document/Cpp/leetcode"
+			"value" : "E:/Cpp/leetcode"
 		}
 	],
 	"kind" : "cache",

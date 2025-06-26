@@ -1,8 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"D:/document/Cpp/leetcode/build/cmake_install.cmake",
-		"D:/document/Cpp/leetcode/build/lib/demo3/cmake_install.cmake"
+		"E:/Cpp/leetcode/build/cmake_install.cmake",
+		"E:/Cpp/leetcode/build/lib/demo4/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
